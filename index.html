@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Video Show</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">Video Show Creator</h1>
+		<br><br>
+			<form action="/VideoShow" method="post" enctype="multipart/form-data">
+				<label for="images">Upload Images</label>
+				<input type="file" name="images" id="images" multiple required class="form-control">
+				<br>
+				<label for="audio">Upload Audio</label>
+				<input type="file" name="audio" id="audio" required class="form-control">
+				<br>
+				<button class="btn btn-danger btn-block" >Create Video Show</button>
+			</form>
+		</h1>
+	</div>
+</body>
+</html>
